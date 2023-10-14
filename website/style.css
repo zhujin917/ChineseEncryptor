@@ -1,0 +1,84 @@
+:root {
+    --theme-color: linear-gradient(90deg, #0078d4, #1e9fff);
+}
+
+html {
+    height: 100%;
+}
+body {
+    margin: 30px 10% 45px;
+    height: calc(100% - 30px - 45px);
+    background-color: #fafafa;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header {
+    position: relative;
+}
+.header .title {
+    font-size: 34px;
+    font-weight: lighter;
+    display: inline-block;
+}
+.header #more {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    font-size: 0;
+    border-radius: 4px;
+}
+.header #more:hover {
+    background-color: rgb(0 0 0 / .1);
+}
+.header #more img {
+    width: 30px;
+    height: 30px;
+}
+.header #menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+}
+
+#content {
+    height: 100%;
+    padding: 10px 15px;
+    font-family: inherit;
+    font-size: 16px;
+    border: solid 1px #bbb;
+    border-radius: 10px;
+    background-color: #fff;
+    resize: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.footer .key {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+}
+.footer .key label {
+    white-space: nowrap;
+    margin: auto 0;
+}
+.footer .key input {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+    }
+}

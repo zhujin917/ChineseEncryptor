@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="ChineseEncryptor.js"></script>
+    <link rel="stylesheet" type="text/css" href="ui/style.css">
+    <script type="text/javascript" src="ui/script.js"></script>
+    <title>ChineseEncryptor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">ChineseEncryptor</div>
+        <button id="more">
+            <img src="icon/hamburger-button.svg" />
+        </button>
+        <div id="menu" class="menu_sub" hidden>
+            <div class="menu_submenu" id="menu_import">从本地文件导入</div>
+            <div class="menu_submenu" id="menu_export">导出为文件</div>
+            <hr>
+            <div class="menu_submenu" id="menu_github">去 GitHub 给颗星</div>
+            <div class="menu_submenu" id="menu_website">作者个人网站</div>
+            <div class="menu_submenu" id="menu_about">关于</div>
+        </div>
+    </div>
+    <textarea id="content" placeholder="输入文本..."></textarea>
+    <div class="footer">
+        <div class="key">
+            <label>密钥</label>
+            <input type="text" id="secretKey" class="ui-input ui-input-big" placeholder="无">
+        </div>
+        <button id="encrypt" class="ui-btn ui-btn-big ui-btn-colored">加密</button>
+        <button id="decrypt" class="ui-btn ui-btn-big">解密</button>
+    </div>
+</body>
+
+</html>
